@@ -1,12 +1,12 @@
 package com.server.server.enumetation;
 
-public enum status {
+public enum Status {
     SERVER_UP("SERVER_UP"),
     SERVER_DOWN("SERVER_DOWN");
 
     private final String status;
 
-    status(String status){
+    Status(String status){
         this.status = status;
     }
 

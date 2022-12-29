@@ -1,6 +1,6 @@
 package com.server.server.model;
 
-import com.server.server.enumetation.status;
+import com.server.server.enumetation.Status;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class server {
+public class Server {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private  long id;
@@ -22,5 +22,5 @@ public class server {
     private String memory;
     private String type;
     private String imageUrl;
-    private status status;
+    private Status status;
 }
