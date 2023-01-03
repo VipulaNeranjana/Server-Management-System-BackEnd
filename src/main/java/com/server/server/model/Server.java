@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Server {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  long id;
+    private long id;
     @Column(unique = true)
     @NotEmpty(message = "IP Address cannot be empty or null")
     private String ipAddress;
@@ -23,4 +23,7 @@ public class Server {
     private String type;
     private String imageUrl;
     private Status status;
+
+    public Server(Long aLong, String ipAddress, String ubuntu_linux, String memory, String personal_pc, String imageUrl, Status serverUp) {
+    }
 }
